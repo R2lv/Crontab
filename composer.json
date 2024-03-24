@@ -1,12 +1,12 @@
 {
-    "name": "R2lv/crontab",
+    "name": "tabatadze/crontab",
     "type": "library",
     "description": "Create, manage or delete crontab and jobs with php.",
     "keywords": ["crontab", "cron", "cron job"],
     "license": "MIT",
     "require": {
         "php": ">=8.0",
-        "symfony/process": "~2.1"
+        "symfony/process": ">=7.0"
     },
     "require-dev": {
         "phpunit/phpunit": ">=9"

@@ -42,7 +42,7 @@ class CrontabFileHandler
     public function parseExistingCrontab(Crontab $crontab)
     {
         // parsing cron file
-        $process = new Process($this->crontabCommand($crontab).' -l');
+        $process = new Process([$this->crontabCommand($crontab), '-l']);
         $process->run();
 
         foreach ($this->parseString($process->getOutput()) as $job) {
